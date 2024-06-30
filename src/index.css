@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #000000;
+  --secondary: #18181b;
+  --border: #3f3f4666;
+  --borderNav: #ffffff1a;
+  --title: #f4f4f5;
+  --subtitle: #a1a1aa;
+  --bgHeader: #252529;
+  --mainColor: #38b6ff;
+  --containerPadding: 3.5rem;
+  --containerPaddingMaxWidth_1000: 2rem;
+  --containerPaddingMaxWidth_600: 1.7rem;
+  --mainButtonColor: #24252e;
+  --borderCard: #5dbcfc4d;
+}
+body {
+  background-color: var(--primary);
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+/* Theme */
+
+.light {
+  --primary: #fafafa;
+  --secondary: #ffffff;
+  --border: #cacaca84;
+  --title: #27272a;
+  --subtitle: #52525b;
+  --bgHeader: #ffffff;
+  --mainColor: #38b6ff;
+  --borderNav: #f2f2f2;
+  --colorIcon: #27272a;
+}
+
+/* Button */
+button {
+  transition: 0.5s;
+}
+button:active {
+  transform: scale(0.8);
+}
+
+/* Active button */
+
+.active-filter {
+  background-color: var(--mainColor);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+.active{
+  transition: .5s;
+  color: var(--mainColor);
+}
+
+
+
+
+
+/* button of download cv */
+.download-cv {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  width: 13rem;
+  height: auto;
+}
+
+.download-cv .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.download-cv .circle .download-cv-icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.download-cv .circle .download-cv-icon.download-cv-arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.download-cv .circle .download-cv-icon.download-cv-arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.download-cv .download-cv-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: var(--title);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.download-cv:hover .circle {
+  width: 100%;
+}
+
+.download-cv:hover .circle .download-cv-icon.download-cv-arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.download-cv:hover .download-cv-text {
+  color: #fff;
+}
+
+
+
+
+
+/* 
+==================
+scrollbar
+==================
+*/
+
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #d4d4d8;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #9e9e9e;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?hn2owi');
+  src:  url('fonts/icomoon.eot?hn2owi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hn2owi') format('truetype'),
+    url('fonts/icomoon.woff?hn2owi') format('woff'),
+    url('fonts/icomoon.svg?hn2owi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-planet:before {
+  content: "\e900";
+}
+.icon-sunny:before {
+  content: "\e907";
+}
+.icon-verified:before {
+  content: "\e903";
+}
+.icon-external-link:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e901";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-moon-o:before {
+  content: "\f186";
+}
+.icon-code:before {
+  content: "\e908";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-bootstrap:before {
+  content: "\e904";
+  color: #7311f5;
+}
+.icon-css3:before {
+  content: "\e90a";
+  color: #1572b6;
+}
+.icon-git:before {
+  content: "\e90b";
+  color: #f05032;
+}
+.icon-html5:before {
+  content: "\e90c";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e90d";
+  color: #f7df1e;
+}
+.icon-laravel:before {
+  content: "\e90e";
+  color: #ff2d20;
+}
+.icon-mongodb:before {
+  content: "\e90f";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e910";
+  color: #4479a1;
+}
+.icon-node-dot-js:before {
+  content: "\e911";
+  color: #393;
+}
+.icon-php:before {
+  content: "\e912";
+  color: #777bb4;
+}
+.icon-react:before {
+  content: "\e909";
+  color: #61dafb;
+}
+.icon-tailwindcss:before {
+  content: "\e902";
+  color: #38b2ac;
+}
+.icon-x:before {
+  content: "\e906";
+}
+.icon-typescript:before {
+  content: "\e913";
+  color: #007acc;
+}
