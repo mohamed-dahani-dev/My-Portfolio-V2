@@ -13,7 +13,7 @@ const projectsData = [
         description:
           "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
         gitHub: "https://github.com/mohamed-dahani-dev/frontend-snacly",
-        link: "",
+        link: "https://frontend-snacly.onrender.com",
       },
   {
     category: "fullstack",
