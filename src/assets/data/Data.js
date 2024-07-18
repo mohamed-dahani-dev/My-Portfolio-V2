@@ -58,8 +58,8 @@ const projectsData = [
     title: "Personal Portfolio",
     description:
       "Create a dynamic personal portfolio using React, showcasing skills, projects, and experiences with modern design and seamless navigation for optimal user engagement and professional presentation.",
-    gitHub: "https://github.com/mohamed-dahani-dev/my-portfolio-v1",
-    link: "https://my-portfolio-bc2db.web.app/",
+    gitHub: "https://github.com/mohamed-dahani-dev/My-Portfolio-V2",
+    link: "https://my-portfolio-v2-9dec.onrender.com/",
   },
 ];
 export default projectsData;
