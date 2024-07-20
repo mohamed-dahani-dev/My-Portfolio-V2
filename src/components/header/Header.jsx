@@ -51,13 +51,13 @@ const Header = () => {
         </Link>
         <Link
           className="text-title font-medium transition duration-500 cursor-pointer hover:text-mainColor"
-          to="projects"
+          to="works"
           spy={true}
           smooth={false}
           offset={-20}
           duration={500}
         >
-          <span className="icon-planet mr-2 text-base"></span>Projects
+          <span className="icon-planet mr-2 text-base"></span>Works
         </Link>
         <Link
           className="text-title font-medium transition duration-500 cursor-pointer hover:text-mainColor"
@@ -132,7 +132,7 @@ const Header = () => {
               </Link>
               <Link
                 className="text-title font-medium transition duration-500 hover:text-mainColor py-4"
-                to="projects"
+                to="works"
                 spy={true}
                 smooth={false}
                 offset={-50}
@@ -141,7 +141,7 @@ const Header = () => {
                   setShowMenu(false);
                 }}
               >
-                <span className="icon-planet mr-2 text-base"></span>Projects
+                <span className="icon-planet mr-2 text-base"></span>Works
               </Link>
               <Link
                 className="text-title font-medium transition duration-500 hover:text-mainColor py-4"

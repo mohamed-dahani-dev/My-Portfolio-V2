@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Data from "../../assets/data/Data";
 
-const Projects = () => {
+const Works = () => {
   const [currentActive, setCurrentActive] = useState("all");
   const [newArray, setNewArray] = useState(Data);
   const handleClick = (buttonCategory) => {
@@ -16,10 +16,10 @@ const Projects = () => {
   const widthCard = 320;
 
   return (
-    <main id="projects">
+    <main id="works">
       <h1 className="text-4xl flex items-center gap-4 text-title font-semibold mt-20 mb-12 max-md:text-2xl">
         <span className="icon-planet text-title text-4xl max-md:text-2xl"></span>
-        My Projects
+        Works
       </h1>
       <section className="flex flex-col items-center justify-center gap-16 mb-20">
         <section className="flex justify-center items-center gap-5 flex-wrap">
@@ -34,7 +34,7 @@ const Projects = () => {
                 : "bg-mainButtonColor px-4 py-2 rounded-md"
             }
           >
-            All Projects
+            All Works
           </button>
           <button
             onClick={() => {
@@ -104,4 +104,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Works;

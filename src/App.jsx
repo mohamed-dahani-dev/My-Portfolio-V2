@@ -3,7 +3,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
-import Projects from "./components/projects/Projects";
+import Works from "./components/works/Works";
 import Skills from "./components/skills/Skills";
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
       <div className=" divide-y divide-border">
         <Hero />
         <Skills />
-        <Projects />
+        <Works />
         <Contact />
         <Footer />
       </div>
