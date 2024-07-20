@@ -26,13 +26,13 @@ const Footer = () => {
         </Link>
         <Link
           className="text-title font-normal transition duration-500 cursor-pointer hover:text-mainColor"
-          to="projects"
+          to="works"
           spy={true}
           smooth={false}
           offset={-20}
           duration={500}
         >
-          Projects
+          Works
         </Link>
         <Link
           className="text-title font-normal transition duration-500 cursor-pointer hover:text-mainColor"
