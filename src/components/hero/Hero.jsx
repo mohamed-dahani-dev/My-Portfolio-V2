@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Lottie from "lottie-react";
 import heroAnimation from "../../assets/animation/Hero.json";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import avatar from "../../assets/me.jpg";
@@ -7,6 +9,13 @@ import myCv from "../../assets/mohamed dahani dev.pdf";
 
 const Hero = () => {
   const lottieRef = useRef();
+
+  // use typeWriter
+  const [text] = useTypewriter({
+    words: ["Web Developer,", "Full Stack Developer."],
+    loop: {},
+  });
+
   return (
     <section id="hero" className="my-20">
       <section className="flex  justify-between items-center gap-20 max-md:flex-col-reverse">
@@ -83,27 +92,26 @@ const Hero = () => {
             initial={{ transform: "translateX(-20rem)", opacity: 0 }}
             animate={{ transform: "translateX(0)", opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-title text-5xl font-bold my-7"
+            className="text-5xl font-bold my-7 text-mainColor max-md:text-4xl"
           >
-            Web Developer, Full Stack Developer
+            <span className="text-title">I'm a </span>
+            {text}
+            <Cursor />
           </motion.h1>
           <motion.p
             initial={{ transform: "translateX(-20rem)", opacity: 0 }}
             animate={{ transform: "translateX(0)", opacity: 1 }}
             transition={{ duration: 1.3 }}
-            className=" text-subtitle text-sm leading-7 mb-4"
+            className=" text-subtitle text-md leading-7 mb-4"
           >
             Hi, Im{" "}
             <span className="text-mainColor font-semibold">
               Mohamed Dahani,
             </span>{" "}
-            Passionate and detail-oriented web developer with 2 years of
-            experience in creating and implementing innovative web solutions.
-            Adept at coding, troubleshooting, and collaborating with
-            cross-functional teams to drive the success of high-impact projects.
-            Seeking a challenging position to leverage my skills in front-end
-            and back-end development for the benefit of a dynamic and
-            forward-thinking company.
+            a passionate web developer with two years of experience in creating
+            and implementing innovative web solutions. Skilled in programming,
+            troubleshooting, and collaborating with cross-functional teams to
+            achieve the success of high-impact projects.
           </motion.p>
         </div>
       </section>

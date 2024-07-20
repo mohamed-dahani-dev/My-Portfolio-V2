@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import Data from "../../assets/data/Data";
 
 const Projects = () => {
@@ -64,44 +63,41 @@ const Projects = () => {
             Full Stack
           </button>
         </section>
-        <section className="flex justify-center flex-wrap items-center gap-5">
-          <AnimatePresence>
-            {newArray.map((card, index) => {
-              return (
-                <motion.article
-                  key={index}
-                  layout
-                  className="flex flex-col justify-center items-center border-borderCard border-2 rounded-2xl cursor-pointer overflow-hidden transition duration-300 hover:border-mainColor"
-                  initial={{ transform: "scale(0)" }}
-                  animate={{ transform: "scale(1)" }}
-                  transition={{ type: "spring", damping: 10, stiffness: 50 }}
-                >
-                  <img height={150} width={widthCard} src={card.img} alt="" />
+        <section
+          className="flex justify-center flex-wrap items-center gap-5"
+          // layout
+        >
+          {newArray.map((card, index) => {
+            return (
+              <article
+                key={index}
+                className="flex flex-col justify-center items-center cursor-pointer overflow-hidden transition duration-300 hover:scale-105"
+              >
+                <img height={150} width={widthCard} src={card.img} alt="" />
 
-                  <div style={{ width: widthCard }} className="p-4">
-                    <h1 className="text-lg font-semibold text-title">
-                      {card.title}
-                    </h1>
-                    <p className="text-subtitle text-sm mt-3 mb-6">
+                <div style={{ width: widthCard }} className="py-5 px-2">
+                  <h1 className="text-lg font-semibold text-title text-center mb-5">
+                    {card.title}
+                  </h1>
+                  {/* <p className="text-subtitle text-sm mt-3 mb-6">
                       {card.description}
-                    </p>
-                    <div className="flex justify-between items-center">
-                      <a
-                        href={card.gitHub}
-                        target="_blank"
-                        className="icon-github text-subtitle text-xl transition duration-500 hover:text-title"
-                      ></a>
-                      <a
-                        href={card.link}
-                        target="_blank"
-                        className="icon-external-link text-subtitle text-xl transition duration-500 hover:text-title"
-                      ></a>
-                    </div>
+                    </p> */}
+                  <div className="flex justify-center items-center gap-5">
+                    <a
+                      href={card.gitHub}
+                      target="_blank"
+                      className="icon-github text-subtitle text-xl transition duration-500 hover:text-title"
+                    ></a>
+                    <a
+                      href={card.link}
+                      target="_blank"
+                      className="icon-external-link text-subtitle text-xl transition duration-500 hover:text-title"
+                    ></a>
                   </div>
-                </motion.article>
-              );
-            })}
-          </AnimatePresence>
+                </div>
+              </article>
+            );
+          })}
         </section>
       </section>
     </main>
