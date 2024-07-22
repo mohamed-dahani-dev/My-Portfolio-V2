@@ -5,7 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import avatar from "../../assets/me.jpg";
-import myCv from "../../assets/mohamed dahani dev.pdf";
+import myCv from "../../assets/mohamed dahani dev [en].pdf";
 
 const Hero = () => {
   const lottieRef = useRef();
@@ -122,7 +122,7 @@ const Hero = () => {
         animate={{ transform: "scale(1)" }}
         transition={{ damping: 12, type: "spring", stiffness: 100 }}
       >
-        <a className="download-cv" href={myCv} download="mohamed dahani dev">
+        <a className="download-cv" href={myCv} download="mohamed dahani dev [resume]">
           <span className="circle" aria-hidden="true">
             <span className="download-cv-icon download-cv-arrow"></span>
           </span>
