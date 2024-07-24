@@ -32,7 +32,7 @@ const projectsData = [
     description:
       "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
     gitHub: "https://github.com/mohamed-dahani-dev/E-Commerce-React-Full-Stack",
-    link: "https://e-commerce-3aa61.web.app/",
+    link: "https://snap-frontend.onrender.com",
   },
   {
     category: "frontend",
