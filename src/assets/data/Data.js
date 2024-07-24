@@ -4,6 +4,7 @@ import crudSystemExJsImg from "../crudSystemExJs.png";
 import eCommerceWithReactImg from "../eCommerceWithReact.png";
 import personalPortfolioImg from "../personalPortfolio.png";
 import snacklyImg from "../snackly.png";
+import snapImg from "../snap.png";
 
 const projectsData = [
     {
@@ -13,6 +14,15 @@ const projectsData = [
         description:
           "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
         gitHub: "https://github.com/mohamed-dahani-dev/frontend-snacly",
+        link: "https://frontend-snacly.onrender.com",
+      },
+    {
+        category: "frontend",
+        img: snapImg,
+        title: "Snap",
+        description:
+          "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
+        gitHub: "https://github.com/mohamed-dahani-dev/snap",
         link: "https://frontend-snacly.onrender.com",
       },
   {
