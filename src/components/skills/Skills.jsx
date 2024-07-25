@@ -6,7 +6,7 @@ const Skills = () => {
     <section id="skills" className="">
       <h1 className="text-4xl flex items-center gap-4 text-title font-semibold mt-20 mb-12 max-md:text-2xl">
         <span className="icon-code text-title text-4xl max-md:text-2xl"></span>
-        My Skills
+        Skills
       </h1>
       <div className="mt-12 flex justify-center items-center flex-wrap gap-8 mb-20">
         <a
