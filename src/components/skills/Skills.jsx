@@ -1,5 +1,5 @@
-import materialuiImg from "../../assets/material-ui.png";
-import expressJsImg from "../../assets/express-js.png";
+import materialuiImg from "../../assets/material ui.png";
+import expressJsImg from "../../assets/express js.png";
 
 const Skills = () => {
   return (

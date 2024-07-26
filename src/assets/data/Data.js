@@ -1,33 +1,43 @@
-import cyborgGamingImg from "../cyborgGaming.png";
-import imageEditorImg from "../imageEditor.png";
-import crudSystemExJsImg from "../crudSystemExJs.png";
-import eCommerceWithReactImg from "../eCommerceWithReact.png";
-import personalPortfolioImg from "../personalPortfolio.png";
+import cyborgGamingImg from "../cyborg gaming.png";
+import imageEditorImg from "../image editor.png";
+import crudSystemImg from "../crud system.png";
+import ecommerceReactImg from "../ecommerc react.png";
+import personalPortfolioImg from "../personal portfolio.png";
 import snacklyImg from "../snackly.png";
 import snapImg from "../snap.png";
+import bookStoreImg from "../book store.png";
 
 const projectsData = [
-    {
-        category: "fullstack",
-        img: snacklyImg,
-        title: "Snackly",
-        description:
-          "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
-        gitHub: "https://github.com/mohamed-dahani-dev/frontend-snacly",
-        link: "https://frontend-snacly.onrender.com",
-      },
-    {
-        category: "frontend",
-        img: snapImg,
-        title: "Snap",
-        description:
-          "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
-        gitHub: "https://github.com/mohamed-dahani-dev/snap",
-        link: "https://snap-frontend.onrender.com",
-      },
   {
     category: "fullstack",
-    img: eCommerceWithReactImg,
+    img: snacklyImg,
+    title: "Snackly",
+    description:
+      "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
+    gitHub: "https://github.com/mohamed-dahani-dev/frontend-snacly",
+    link: "https://frontend-snacly.onrender.com",
+  },
+  {
+    category: "fullstack",
+    img: bookStoreImg,
+    title: "Book Store",
+    description:
+      "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
+    gitHub: "https://github.com/mohamed-dahani-dev/book-store",
+    link: "https://book-store-mvfd.onrender.com/",
+  },
+  {
+    category: "frontend",
+    img: snapImg,
+    title: "Snap",
+    description:
+      "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
+    gitHub: "https://github.com/mohamed-dahani-dev/snap",
+    link: "https://snap-frontend.onrender.com",
+  },
+  {
+    category: "fullstack",
+    img: ecommerceReactImg,
     title: "E-Commerce",
     description:
       "Revolutionize online shopping with our React full-stack e-commerce website, seamlessly integrating frontend and backend technologies for a dynamic, user-friendly experience.",
@@ -55,7 +65,7 @@ const projectsData = [
   },
   {
     category: "fullstack",
-    img: crudSystemExJsImg,
+    img: crudSystemImg,
     title: "Crud System Express Js",
     description:
       "A CRUD system using Express.js enables Create, Read, Update, and Delete operations on data. It utilizes Node.js and Express for backend functionality, facilitating efficient database interactions for web applications.",
